@@ -7,8 +7,8 @@ const formEvent = (event) => {
     alert("All form fields must be filled in");
   } else {
     const userInfo = {
-      email: userEmail,
-      pass: userPassword,
+      email: userEmail.trim(),
+      pass: userPassword.trim(),
     };
     console.log(userInfo);
     event.currentTarget.reset();
