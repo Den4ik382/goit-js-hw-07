@@ -3,7 +3,7 @@ const formEvent = (event) => {
   event.preventDefault();
   const userEmail = event.currentTarget.elements.email.value;
   const userPassword = event.currentTarget.elements.password.value;
-  if (userEmail === "" || userPassword === "") {
+  if (userEmail.trim() === "" || userPassword.trim() === "") {
     alert("All form fields must be filled in");
   } else {
     const userInfo = {
